@@ -2,6 +2,14 @@
   background-color: #b6c1d2;
   padding: 2rem;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main h1 {
+  text-align: center;
+  margin-block-end: 1rem;
 }
 
 .home {
@@ -30,7 +38,10 @@
 }
 
 .buttonGroup {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
   margin-block-start: 1.2rem;
 }
 
