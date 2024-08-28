@@ -1,6 +1,6 @@
 .main {
-  background-color: #b6c1d2;
-  padding: 2rem;
+  padding-block: 2rem;
+  padding-inline: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -9,44 +9,60 @@
 
 .main h1 {
   text-align: center;
-  margin-block-end: 1rem;
 }
 
-.home {
-  background-color: #f9f9f9;
+.firstCard,
+.secondCard,
+.thirdCard,
+.fourthCard {
   max-width: fit-content;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 1rem;
   margin-inline: auto;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  max-width: 1200px;
+  border: 1px solid var(--accent-clr);
+}
+
+.secondCard {
+  flex-direction: row-reverse;
+}
+
+.home h2 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .vitorImg {
   border-radius: 1.5rem;
 }
 
-.homeInfo {
-  max-width: 500px;
-  line-height: 1.3;
+.homeInfoGroup h2 {
+  margin-block-end: 1rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.homeInfo h1 {
-  text-align: center;
-  margin-block-end: 1rem;
+.homeInfo {
+  text-align: justify;
+  font-size: 1.2rem;
 }
 
 .buttonGroup {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-inline: auto;
+  display: grid;
   margin-block-start: 1.2rem;
+  padding-inline: 1rem;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .buttonGroup h2 {
   font-size: 1.2rem;
+  text-align: center;
+  margin-block-end: 0.5rem;
 }
 
 .buttonGroup a {
@@ -54,8 +70,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #4598d3;
-  color: #f9f9f9;
+  background-color: var(--accent-clr);
+  color: var(--primary-clr);
   padding: 1rem;
   margin-block-start: 0.3rem;
   font-weight: bold;
@@ -69,7 +85,10 @@
 }
 
 @media (max-width: 1100px) {
-  .home {
+  .firstCard,
+  .secondCard,
+  .thirdCard,
+  .fourthCard {
     flex-direction: column;
   }
 
@@ -81,11 +100,7 @@
     height: auto;
   }
 
-  .homeInfo h2 {
-    font-size: 1rem;
-  }
-
   .buttonGroup a {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 }

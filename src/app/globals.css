@@ -1,3 +1,9 @@
+:root {
+  --bg-clr: #080808;
+  --primary-clr: #f9f9f9;
+  --accent-clr: #e63939;
+}
+
 *,
 *:after,
 *:before {
@@ -10,6 +16,9 @@
 body {
   font-size: 100%;
   list-style-type: none;
+  background-color: var(--bg-clr);
+  color: var(--primary-clr);
+  line-height: 1.5;
 }
 
 img {
