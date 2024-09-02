@@ -15,7 +15,7 @@ export default function Home() {
       <Image
         src={vitorImg1}
         alt="Imagem do Vitor"
-        className={styles.vitorImg}
+        className={`${styles.vitorImg} ${styles.vitorImgForte}`}
         width={420}
         height={520}
         quality={100}
@@ -34,22 +34,24 @@ export default function Home() {
       <section className={styles.firstCard}>
         <div className={styles.homeInfoGroup}>
           <h2 className={styles.subtitle}>Quem sou eu?</h2>
-          <p className={styles.homeInfo}>
-            Olá, meu nome é João Vitor, estou graduando nutrição. Minha jornada
-            até aqui não foi fácil. Eu sei o que é olhar no espelho e não se
-            reconhecer. Eu já estive muito acima do peso, já fiquei muito
-            abaixo, e, por um longo tempo, fui prisioneiro da compulsão
-            alimentar.
-          </p>
-          <Image
-            src={vitorImg2}
-            alt="Imagem do Vitor"
-            className={`${styles.vitorImg} ${styles.vitorImgGordo}`}
-            width={420}
-            height={520}
-            quality={100}
-            priority
-          />
+          <div className={styles.firstCardGroup}>
+            <p className={styles.homeInfo}>
+              Olá, meu nome é João Vitor, estou graduando nutrição. Minha
+              jornada até aqui não foi fácil. Eu sei o que é olhar no espelho e
+              não se reconhecer. Eu já estive muito acima do peso, já fiquei
+              muito abaixo, e, por um longo tempo, fui prisioneiro da compulsão
+              alimentar.
+            </p>
+            <Image
+              src={vitorImg2}
+              alt="Imagem do Vitor"
+              className={`${styles.vitorImg} ${styles.vitorImgGordo}`}
+              width={420}
+              height={520}
+              quality={100}
+              priority
+            />
+          </div>
           <h3 className={styles.textImgGordo}>Sim, já fui as duas pessoas!</h3>
         </div>
       </section>
