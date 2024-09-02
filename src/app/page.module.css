@@ -1,4 +1,4 @@
-.main {
+.container {
   padding-block: 2rem;
   padding-inline: 1rem;
   min-height: 100vh;
@@ -7,28 +7,21 @@
   gap: 2rem;
 }
 
-.main h1 {
+.hero h1 {
   text-align: center;
 }
 
-.vitorImgForte {
+.cardImg {
+  border-radius: 1.5rem;
+}
+
+.cardImgHero {
   display: flex;
   justify-content: center;
   margin-inline: auto;
 }
 
-.buttonGroupHero {
-  display: grid;
-  margin-inline: auto;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.firstCard,
-.secondCard,
-.thirdCard,
-.fourthCard,
-.fifthCard {
+.card {
   max-width: fit-content;
   border-radius: 1.5rem;
   padding: 1rem;
@@ -40,46 +33,48 @@
   border: 1px solid var(--accent-clr);
 }
 
-.secondCard,
-.fifthCard {
+.cardReverse {
   flex-direction: row-reverse;
 }
 
-.home h2 {
-  text-align: center;
-  text-transform: uppercase;
+.cardMain {
+  flex-direction: column;
 }
 
-.vitorImg {
-  border-radius: 1.5rem;
-}
-
-.subtitle {
+.cardSubtitle {
   text-decoration: underline;
+  margin-block-start: 0.5rem;
 }
 
-.subtitle,
-.textImgGordo {
-  margin-block-end: 1rem;
+.cardSubtitle,
+.cardImgSmallSubtitle {
   text-align: center;
   text-transform: uppercase;
-  background-color: #4a0198;
+  background-color: var(--second-clr);
   max-width: fit-content;
   display: flex;
   justify-content: center;
   margin-inline: auto;
 }
 
-.firstCardGroup {
+.cardImgSmallSubtitle {
+  margin-block-end: 0.5rem;
+}
+
+.cardGroup {
   display: flex;
   gap: 2rem;
   margin-block-end: 1rem;
   flex-direction: row-reverse;
 }
 
-.homeInfo {
+.cardInfo {
   text-align: justify;
   font-size: 1.2rem;
+}
+
+.cardInfo span {
+  text-decoration: underline;
 }
 
 .buttonGroup {
@@ -96,41 +91,16 @@
   margin-block-end: 0.5rem;
 }
 
-.buttonGroup a,
-.buttonGroupHero a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  background-color: var(--accent-clr);
-  color: var(--primary-clr);
-  padding: 1rem;
-  margin-block-start: 0.3rem;
-  font-weight: bold;
-  text-align: center;
-  border-radius: 0.5rem;
-  transition: opacity 0.3s;
-}
-
-.buttonGroup a:hover,
-.buttonGroupHero a:hover {
-  opacity: 0.9;
-}
-
 @media (max-width: 1100px) {
-  .main h1 {
+  .hero h1 {
     font-size: 1.6rem;
   }
 
-  .firstCard,
-  .secondCard,
-  .thirdCard,
-  .fourthCard,
-  .fifthCard {
+  .card {
     flex-direction: column;
   }
 
-  .vitorImg {
+  .cardImg {
     display: flex;
     justify-content: center;
     margin-inline: auto;
@@ -138,35 +108,23 @@
     height: auto;
   }
 
-  .vitorImgGordo {
+  .cardSubtitle {
+    font-size: 1.3rem;
+  }
+
+  .cardImgSmall {
     max-width: 250px;
     height: 250px;
     box-shadow: 12px 12px 20px 0px #000000;
   }
 
-  .textImgGordo {
-    margin-block-start: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .firstCardGroup {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .homeInfoGroup p {
-    margin-block-end: 1rem;
-  }
-
-  .homeInfoGroup h2 {
-    font-size: 1.25rem;
-  }
-
-  .homeInfo span {
-    text-decoration: underline;
-  }
-
-  .buttonGroup a {
+  .cardImgSmallSubtitle {
     font-size: 1rem;
+  }
+
+  .cardGroup {
+    flex-direction: column;
+    gap: 1rem;
+    margin-block-end: 0;
   }
 }
