@@ -37,7 +37,6 @@
     #141414 0%,
     #0f0f0f 100%
   );
-  box-shadow: 12px 12px 20px 0px #000000;
 }
 
 .cardReverse {
@@ -177,7 +176,6 @@
     #141414 0%,
     #0f0f0f 100%
   );
-  box-shadow: 12px 12px 20px 0px #000000;
 }
 
 .clientsBenefits ul {
@@ -227,7 +225,6 @@
   .cardImgSmall {
     max-width: 250px;
     height: 250px;
-    box-shadow: 12px 12px 20px 0px #000000;
   }
 
   .cardImgSmallSubtitle {
