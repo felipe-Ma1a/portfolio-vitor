@@ -11,8 +11,8 @@ const CardImage = ({ src, className }: CardImageProps) => {
       src={src}
       alt="Imagem do Vitor"
       className={className}
-      width={420}
-      height={520}
+      width={360}
+      height={420}
       quality={100}
       priority
     />

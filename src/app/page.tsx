@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import CardImage from "@/components/CardImage";
+import ListItem from "@/components/ListItem";
 
 import cardImg1 from "public/images/flexvitor-9.jpg";
 import cardImg2 from "public/images/flexvitor-5.jpg";
@@ -86,10 +87,10 @@ export default function Home() {
       </section>
 
       <section className={styles.benefits}>
-        <h2>Nosso diferencial</h2>
-        <p className={styles.benefitsText}>
-          Diferenciais do João Vitor como seu Nutricionista:{" "}
-        </p>
+        <div className={styles.benefitsText}>
+          <h2>Nosso diferencial</h2>
+          <p>Diferenciais do João Vitor como seu Nutricionista: </p>
+        </div>
 
         <article className={styles.benefitsGroup}>
           <div className={styles.benefitsGroupTitle}>
@@ -165,6 +166,48 @@ export default function Home() {
             resultados sejam alcançados e sustentados ao longo do tempo.
           </p>
         </article>
+      </section>
+
+      <section className={styles.clientsBenefits}>
+        <article className={styles.clientsBenefitsGroup}>
+          <h2>O que as mulheres ganham?</h2>
+          <p>Saúde hormonal, controle de peso, bem-estar geral e autoestima.</p>
+        </article>
+
+        <ul>
+          <ListItem text="Perca de gordura" />
+          <ListItem text="Definição muscular" />
+          <ListItem text="Ganho de massa magra (Ganhar músculos corretamente)" />
+          <ListItem text="Suplementação (caso necessário)" />
+          <ListItem text="Ciclo menstrual" />
+          <ListItem
+            text="Alimentação específica para diferentes fases do ciclo menstrual,
+            ajudando a aliviar sintomas como inchaço, fadiga, e alterações de
+            humor."
+          />
+          <ListItem
+            text="Nutrição para Gravidez e Pós parto, Suporte nutricional para
+            mulheres grávidas e no pós-parto, visando a saúde da mãe e do bebê."
+          />
+          <ListItem text="Melhora nos quadros clínicos de saúde" />
+        </ul>
+      </section>
+
+      <section className={styles.clientsBenefits}>
+        <article className={styles.clientsBenefitsGroup}>
+          <h2>O que os homens ganham?</h2>
+          <p>Definição muscular, ganho de massa magra e perda de gordura.</p>
+        </article>
+
+        <ul>
+          <ListItem text="Perca de gordura" />
+          <ListItem text="Ganho de massa magra (músculos) corretamente" />
+          <ListItem text="Definição muscular" />
+          <ListItem text="Suplementação (caso necessário)" />
+          <ListItem text="Melhora no desempenho de esportes" />
+          <ListItem text="Melhora no desempenho dos treinos de musculação" />
+          <ListItem text="Consulta para Pré e Pós-Treino: Orientação específica sobre alimentação antes e depois dos treinos, ajustando para diferentes tipos de atividade física" />
+        </ul>
       </section>
 
       <div className={styles.buttonGroup}>
