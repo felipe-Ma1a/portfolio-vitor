@@ -11,10 +11,18 @@
   text-align: center;
 }
 
+.buttonGroupHero {
+  display: grid;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .firstCard,
 .secondCard,
 .thirdCard,
-.fourthCard {
+.fourthCard,
+.fifthCard {
   max-width: fit-content;
   border-radius: 1.5rem;
   padding: 1rem;
@@ -23,7 +31,7 @@
   justify-content: center;
   gap: 2rem;
   max-width: 1200px;
-  border: 1px solid #8c201e;
+  border: 1px solid var(--accent-clr);
 }
 
 .secondCard {
@@ -39,10 +47,20 @@
   border-radius: 1.5rem;
 }
 
-.homeInfoGroup h2 {
+.subtitle {
+  text-decoration: underline;
+}
+
+.subtitle,
+.textImgGordo {
   margin-block-end: 1rem;
   text-align: center;
   text-transform: uppercase;
+  background-color: #4a0198;
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
 }
 
 .homeInfo {
@@ -53,7 +71,6 @@
 .buttonGroup {
   display: grid;
   margin-block-start: 1.2rem;
-  padding-inline: 1rem;
   margin-inline: auto;
   width: 100%;
   max-width: 1200px;
@@ -65,7 +82,8 @@
   margin-block-end: 0.5rem;
 }
 
-.buttonGroup a {
+.buttonGroup a,
+.buttonGroupHero a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,15 +98,21 @@
   transition: opacity 0.3s;
 }
 
-.buttonGroup a:hover {
+.buttonGroup a:hover,
+.buttonGroupHero a:hover {
   opacity: 0.9;
 }
 
 @media (max-width: 1100px) {
+  .main h1 {
+    font-size: 1.6rem;
+  }
+
   .firstCard,
   .secondCard,
   .thirdCard,
-  .fourthCard {
+  .fourthCard,
+  .fifthCard {
     flex-direction: column;
   }
 
@@ -98,6 +122,29 @@
     margin-inline: auto;
     max-width: auto;
     height: auto;
+  }
+
+  .vitorImgGordo {
+    max-width: 250px;
+    height: 250px;
+    box-shadow: 12px 12px 20px 0px #000000;
+  }
+
+  .textImgGordo {
+    margin-block-start: 1rem;
+    font-size: 1.2rem;
+  }
+
+  .homeInfoGroup p {
+    margin-block-end: 1rem;
+  }
+
+  .homeInfoGroup h2 {
+    font-size: 1.25rem;
+  }
+
+  .homeInfo span {
+    text-decoration: underline;
   }
 
   .buttonGroup a {
