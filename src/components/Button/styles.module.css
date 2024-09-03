@@ -3,7 +3,12 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: var(--accent-clr);
+  background-image: linear-gradient(
+    to right,
+    #000e31 0%,
+    #055aba 51%,
+    #2be3fd 100%
+  );
   color: var(--primary-clr);
   padding: 1rem;
   margin-block-start: 0.3rem;
@@ -19,6 +24,6 @@
 
 @media (max-width: 1100px) {
   .button {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
