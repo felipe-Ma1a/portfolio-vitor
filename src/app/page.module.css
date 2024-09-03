@@ -260,7 +260,7 @@
   }
 
   .benefitsGroupText::before {
-    height: 78%;
+    height: 76%;
     top: 170px;
   }
 }

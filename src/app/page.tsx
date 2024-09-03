@@ -98,12 +98,12 @@ export default function Home() {
         <article className={styles.benefitsGroup}>
           <div className={styles.benefitsGroupTitle}>
             <p>06</p>
-            <h3>Acompanhamento:</h3>
+            <h3>Acompanhamento acima da média:</h3>
           </div>
           <p className={styles.benefitsGroupText}>
-            Acima da média Monitoramento contínuo com ajustes na dieta e no
-            plano de ação, mesmo após a entrega inicial, garantindo que os
-            resultados sejam alcançados e sustentados ao longo do tempo.
+            Monitoramento contínuo com ajustes na dieta e no plano de ação,
+            mesmo após a entrega inicial, garantindo que os resultados sejam
+            alcançados e sustentados ao longo do tempo.
           </p>
         </article>
       </section>
@@ -173,7 +173,9 @@ export default function Home() {
         </ul>
       </section>
 
-      <Button />
+      <div className={styles.buttonGroup}>
+        <Button />
+      </div>
 
       <section className={`${styles.card} ${styles.cardMain}`}>
         <h2 className={styles.cardSubtitle}>Quem sou eu?</h2>
