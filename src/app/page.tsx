@@ -1,183 +1,100 @@
+import Hero from "@/components/Hero";
+import Benefits from "@/components/Benefits";
+import ClientsBenefits from "@/components/ClientsBenefits";
+import ListItem from "@/components/ListItem";
 import Button from "@/components/Button";
 import CardImage from "@/components/CardImage";
-import ListItem from "@/components/ListItem";
-import { FaCheckSquare } from "react-icons/fa";
 
 import cardImg1 from "public/images/flexvitor-9.jpg";
 import cardImg2 from "public/images/flexvitor-5.jpg";
 import cardImg3 from "public/images/flexvitor-7.jpg";
 import cardImg4 from "public/images/flexvitor-8.jpg";
 import cardImg5 from "public/images/flexvitor-10.jpg";
-import cardImg6 from "public/images/flexvitor-12.jpg";
 
 import styles from "./page.module.css";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
     <main className={styles.container}>
-      <section className={styles.hero}>
-        <CardImage
-          src={cardImg6}
-          className={`${styles.cardImg} ${styles.imgHero}`}
+      <Hero />
+
+      <Benefits />
+
+      <ClientsBenefits
+        title="O que as mulheres ganham?"
+        text="Saúde hormonal, controle de peso, bem-estar geral e autoestima."
+      >
+        <ListItem text="Perca de gordura" />
+        <ListItem text="Definição muscular" />
+        <ListItem text="Ganho de massa magra" />
+        <ListItem text="Suplementação (caso necessário)" />
+        <ListItem
+          text="Ciclo menstrual"
+          color="#d0abf1"
+          className={styles.listItemWoman}
         />
-        <h1>Transforme sua vida com quem já esteve no seu lugar</h1>
-        <div className={styles.buttonGroup}>
-          <Button />
-        </div>
-      </section>
-
-      <section className={styles.benefits}>
-        <div className={styles.benefitsText}>
-          <h2>Nosso diferencial</h2>
-          <p>Diferenciais da nossa equipe: </p>
-        </div>
-
-        <article className={styles.benefitsGroup}>
-          <div className={styles.benefitsGroupTitle}>
-            <p>01</p>
-            <h3>Diagnóstico 360º da Sua Vida:</h3>
-          </div>
-          <p className={styles.benefitsGroupText}>
-            Análise completa que vai além da nutrição, incluindo aspectos
-            emocionais, rotina diária, sono, estresse e atividades físicas. Isso
-            garante uma abordagem holística e personalizada, adaptada às
-            necessidades reais do paciente.
-          </p>
-        </article>
-
-        <article className={styles.benefitsGroup}>
-          <div className={styles.benefitsGroupTitle}>
-            <p>02</p>
-            <h3>Dieta Específica e 100% Personalizada:</h3>
-          </div>
-          <p className={styles.benefitsGroupText}>
-            Planos alimentares totalmente adaptados às necessidades,
-            preferências, estilo de vida e objetivos individuais. Nada de dietas
-            genéricas, apenas soluções sob medida.
-          </p>
-        </article>
-
-        <article className={styles.benefitsGroup}>
-          <div className={styles.benefitsGroupTitle}>
-            <p>03</p>
-            <h3>Suporte via WhatsApp:</h3>
-          </div>
-          <p className={styles.benefitsGroupText}>
-            Acesso direto para tirar dúvidas e receber orientações em tempo
-            real, sempre que precisar e nunca se sentir sozinho(a) na sua
-            jornada.
-          </p>
-        </article>
-
-        <article className={styles.benefitsGroup}>
-          <div className={styles.benefitsGroupTitle}>
-            <p>04</p>
-            <h3>Lista de Compras Personalizada e Prática:</h3>
-          </div>
-          <p className={styles.benefitsGroupText}>
-            Cada item cuidadosamente selecionado para atender à dieta
-            específica, facilitando a vida do paciente e garantindo que ele
-            tenha tudo o que precisa para seguir o plano alimentar sem
-            dificuldades.
-          </p>
-        </article>
-
-        <article className={styles.benefitsGroup}>
-          <div className={styles.benefitsGroupTitle}>
-            <p>05</p>
-            <h3>Planejamento de Refeições da Semana:</h3>
-          </div>
-          <p className={styles.benefitsGroupText}>
-            Organização completa de todas as refeições da semana, desde o café
-            da manhã até o jantar, adaptada ao gosto e às necessidades do
-            paciente. Sem improvisos, apenas refeições equilibradas e fáceis de
-            seguir.
-          </p>
-        </article>
-
-        <article className={styles.benefitsGroup}>
-          <div className={styles.benefitsGroupTitle}>
-            <p>06</p>
-            <h3>Acompanhamento acima da média:</h3>
-          </div>
-          <p className={styles.benefitsGroupText}>
-            Monitoramento contínuo com ajustes na dieta e no plano de ação,
-            mesmo após a entrega inicial, garantindo que os resultados sejam
-            alcançados e sustentados ao longo do tempo.
-          </p>
-        </article>
-      </section>
-
-      <section className={styles.clientsBenefits}>
-        <article className={styles.clientsBenefitsGroup}>
-          <h2>O que as mulheres ganham?</h2>
-          <p>Saúde hormonal, controle de peso, bem-estar geral e autoestima.</p>
-        </article>
-
-        <ul>
-          <ListItem text="Perca de gordura" />
-          <ListItem text="Definição muscular" />
-          <ListItem text="Ganho de massa magra" />
-          <ListItem text="Suplementação (caso necessário)" />
-          <li className={`${styles.listItem} ${styles.listItemWoman}`}>
-            <FaCheckSquare size={16} color="#d0abf1" />
-            Ciclo menstrual
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemWoman}`}>
-            Alimentação específica para diferentes fases do ciclo menstrual,
+        <ListItem
+          text="Alimentação específica para diferentes fases do ciclo menstrual,
             ajudando a aliviar sintomas como inchaço, fadiga, e alterações de
-            humor.
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemWoman}`}>
-            <FaCheckSquare size={16} color="#d0abf1" />
-            Nutrição para Gravidez e Pós parto
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemWoman}`}>
-            Suporte nutricional para mulheres grávidas e no pós-parto, visando a
-            saúde da mãe e do bebê.
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemWoman}`}>
-            <FaCheckSquare size={16} color="#d0abf1" />
-            Melhora nos quadros clínicos de saúde
-          </li>
-        </ul>
-      </section>
+            humor."
+          showCheck={false}
+          className={styles.listItemWoman}
+        />
+        <ListItem
+          text="Nutrição para Gravidez e Pós parto"
+          color="#d0abf1"
+          className={styles.listItemWoman}
+        />
+        <ListItem
+          text="Suporte nutricional para mulheres grávidas e no pós-parto, visando a
+            saúde da mãe e do bebê."
+          showCheck={false}
+          className={styles.listItemWoman}
+        />
+        <ListItem
+          text="Melhora nos quadros clínicos de saúde"
+          color="#d0abf1"
+          className={styles.listItemWoman}
+        />
+      </ClientsBenefits>
 
-      <section className={styles.clientsBenefits}>
-        <article className={styles.clientsBenefitsGroup}>
-          <h2>O que os homens ganham?</h2>
-          <p>Definição muscular, ganho de massa magra e perda de gordura.</p>
-        </article>
-
-        <ul>
-          <ListItem text="Perca de gordura" />
-          <ListItem text="Ganho de massa magra corretamente" />
-          <ListItem text="Definição muscular" />
-          <ListItem text="Suplementação (caso necessário)" />
-          <li className={`${styles.listItem} ${styles.listItemMan}`}>
-            <FaCheckSquare size={16} color="#1e98d9" />
-            Melhora no desempenho de esportes
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemMan}`}>
-            <FaCheckSquare size={16} color="#1e98d9" />
-            Melhora no desempenho dos treinos de musculação
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemMan}`}>
-            <FaCheckSquare size={16} color="#1e98d9" />
-            Consulta para Pré e Pós-Treino
-          </li>
-          <li className={`${styles.listItem} ${styles.listItemMan}`}>
-            Orientação específica sobre alimentação antes e depois dos treinos,
-            ajustando para diferentes tipos de atividade física
-          </li>
-        </ul>
-      </section>
+      <ClientsBenefits
+        title="O que os homens ganham?"
+        text="Definição muscular, ganho de massa magra e perda de gordura."
+      >
+        <ListItem text="Perca de gordura" />
+        <ListItem text="Ganho de massa magra corretamente" />
+        <ListItem text="Definição muscular" />
+        <ListItem text="Suplementação (caso necessário)" />
+        <ListItem
+          text="Melhora no desempenho de esportes"
+          color="#1e98d9"
+          className={styles.listItemMan}
+        />
+        <ListItem
+          text="Melhora no desempenho dos treinos de musculação"
+          color="#1e98d9"
+          className={styles.listItemMan}
+        />
+        <ListItem
+          text="Consulta para Pré e Pós-Treino"
+          color="#1e98d9"
+          className={styles.listItemMan}
+        />
+        <ListItem
+          text="Orientação específica sobre alimentação antes e depois dos treinos,
+            ajustando para diferentes tipos de atividade física"
+          showCheck={false}
+          className={styles.listItemMan}
+        />
+      </ClientsBenefits>
 
       <div className={styles.buttonGroup}>
         <Button />
       </div>
 
-      <section className={`${styles.card} ${styles.cardMain}`}>
+      <Card className={styles.cardMain}>
         <h2 className={styles.cardSubtitle}>Quem sou eu?</h2>
         <div className={styles.cardGroup}>
           <p className={styles.cardInfo}>
@@ -196,9 +113,9 @@ export default function Home() {
           <CardImage src={cardImg2} className={styles.cardImg} />
           Sim, já fui as duas pessoas!
         </h3>
-      </section>
+      </Card>
 
-      <section className={`${styles.card} ${styles.cardReverse}`}>
+      <Card className={styles.cardReverse}>
         <CardImage src={cardImg3} className={styles.cardImg} />
         <p className={styles.cardInfo}>
           Mas foi através dessas experiências que encontrei minha verdadeira{" "}
@@ -207,18 +124,18 @@ export default function Home() {
           com o conhecimento certo, poderia <b>transformar</b> minha realidade e
           a de outros.
         </p>
-      </section>
+      </Card>
 
-      <section className={styles.card}>
+      <Card>
         <CardImage src={cardImg4} className={styles.cardImg} />
         <p className={styles.cardInfo}>
           E foi exatamente isso que aconteceu. Hoje, tenho as <b>ferramentas</b>
           , o <b>conhecimento</b> e a <b>experiência</b> de quem já{" "}
           <span>passou pelo que você está passando.</span>
         </p>
-      </section>
+      </Card>
 
-      <section className={styles.card}>
+      <Card>
         <p className={styles.cardInfo}>
           Eu não estou aqui para te julgar ou te dizer que a <b>mudança</b> é
           fácil. Estou aqui para te mostrar que é <b>possível</b>. Se você está
@@ -227,9 +144,9 @@ export default function Home() {
           <b>guiar cada passo</b> da sua <b>transformação</b>.
         </p>
         <CardImage src={cardImg5} className={styles.cardImg} />
-      </section>
+      </Card>
 
-      <section className={`${styles.card} ${styles.cardReverse}`}>
+      <Card className={styles.cardReverse}>
         <CardImage src={cardImg1} className={styles.cardImg} />
         <p className={styles.cardInfo}>
           Clique no link abaixo e venha conversar comigo. Juntos, podemos
@@ -238,7 +155,7 @@ export default function Home() {
           eu <b>já estive no seu lugar</b> e sei que a <b>mudança é possível</b>
           .
         </p>
-      </section>
+      </Card>
 
       <div className={styles.buttonGroup}>
         <h2>Vamos transformar sua vida?</h2>

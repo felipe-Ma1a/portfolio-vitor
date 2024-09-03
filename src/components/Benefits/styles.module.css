@@ -1,0 +1,71 @@
+.benefits {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.benefitsText {
+  margin-block: 1rem;
+}
+
+.benefitsText h2,
+.benefitsText p {
+  text-align: center;
+}
+
+.benefitsText p {
+  font-weight: bold;
+}
+
+.benefits h2 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-block-end: 0.2rem;
+}
+
+.benefitsGroup {
+  margin-block-start: 2rem;
+}
+
+.benefitsGroupTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block-end: 1rem;
+}
+
+.benefitsGroupTitle h3 {
+  font-size: 1.3rem;
+}
+
+.benefitsGroupTitle p {
+  background-color: var(--accent-clr);
+  padding: 0.5rem;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.benefitsGroupText {
+  font-size: 0.9rem;
+  padding-inline-start: 3.2rem;
+}
+
+.benefitsGroupText::before {
+  content: "";
+  position: absolute;
+  border-left: 1px solid var(--accent-clr);
+  left: 17px;
+  height: 72%;
+  top: 140px;
+}
+
+@media (max-width: 1100px) {
+  .benefitsGroupText::before {
+    height: 76%;
+    top: 170px;
+  }
+}

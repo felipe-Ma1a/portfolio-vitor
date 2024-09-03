@@ -1,0 +1,36 @@
+.hero h1 {
+  text-align: center;
+  margin-block-start: 1rem;
+  margin-block-end: 1.5rem;
+}
+
+.imgHero {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.cardImg {
+  border-radius: 1.5rem;
+}
+
+.buttonGroup {
+  display: grid;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (max-width: 1100px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .cardImg {
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    max-width: auto;
+    height: auto;
+  }
+}

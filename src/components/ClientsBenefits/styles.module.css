@@ -1,0 +1,39 @@
+.clientsBenefits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid var(--accent-clr);
+  border-radius: 1.5rem;
+  padding: 1rem;
+  background: radial-gradient(
+    53.57% 49.87% at 5.54% 0%,
+    #141414 0%,
+    #0f0f0f 100%
+  );
+}
+
+.clientsBenefits ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.clientsBenefitsGroup {
+  margin-block: 1.5rem;
+}
+
+.clientsBenefitsGroup h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  margin-block-end: 0.5rem;
+}
+
+.clientsBenefitsGroup p {
+  text-align: center;
+  font-weight: bold;
+}
