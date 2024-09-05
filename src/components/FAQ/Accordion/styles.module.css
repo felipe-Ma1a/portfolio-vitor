@@ -1,0 +1,48 @@
+.accordionButton {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--primary-clr);
+  border: 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.accordionButton span {
+  font-size: 2rem;
+}
+
+.accordionOpen {
+  color: #2374c8;
+}
+
+.accordionLine {
+  height: 1px;
+  width: 100%;
+  background-color: #2374c8;
+}
+
+.accordionText {
+  display: grid;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.accordionText p {
+  overflow: hidden;
+  font-size: 0.9rem;
+}
+
+.accordionTextOpen {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.accordionTextClosed {
+  grid-template-rows: 0fr;
+  opacity: 0;
+}

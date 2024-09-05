@@ -1,0 +1,26 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.faq h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 1.7rem;
+}
+
+.accordionGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .faq h1 {
+    font-size: 1.6rem;
+  }
+}

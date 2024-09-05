@@ -79,6 +79,23 @@
   color: #1e98d9;
 }
 
+.footer {
+  background-color: #2374c8;
+  text-align: center;
+  margin-block-start: 2rem;
+}
+
+.footer a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-clr);
+  transition: color 0.2s;
+}
+
+.footer a:hover {
+  color: var(--bg-clr);
+}
+
 @media (max-width: 1100px) {
   .cardImg {
     display: flex;
