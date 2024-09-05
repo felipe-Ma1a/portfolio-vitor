@@ -3,7 +3,7 @@
   background-color: transparent;
   color: var(--primary-clr);
   border: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -34,7 +34,7 @@
 
 .accordionText p {
   overflow: hidden;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .accordionTextOpen {
