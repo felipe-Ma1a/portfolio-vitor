@@ -24,3 +24,9 @@
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 385px) {
+  .faq h1 {
+    font-size: 1.4rem;
+  }
+}
