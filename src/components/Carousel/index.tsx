@@ -57,7 +57,7 @@ const Carousel = () => {
 
   return (
     <section className={styles.sliderGroup}>
-      <h2>Evolução que fala por si:</h2>
+      <h2>Evoluções que falam por si:</h2>
 
       <Slider {...settings}>
         <Image
