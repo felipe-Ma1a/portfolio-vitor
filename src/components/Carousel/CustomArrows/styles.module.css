@@ -1,0 +1,63 @@
+.arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-color: #2374c8;
+  transition: none;
+  border-radius: 50%;
+  z-index: 1;
+  top: 500px;
+}
+
+.arrow:hover {
+  background-color: #2374c8;
+  opacity: 1;
+}
+
+.arrow:focus,
+.arrow:active {
+  background-color: #2374c8;
+  opacity: 1;
+}
+
+.prev {
+  left: 46.2%;
+}
+
+.next {
+  right: 46.2%;
+}
+
+@media (max-width: 820px) {
+  .prev {
+    left: 44%;
+  }
+
+  .next {
+    right: 44%;
+  }
+}
+
+@media (max-width: 500px) {
+  .prev {
+    left: 39%;
+  }
+
+  .next {
+    right: 39%;
+  }
+}
+
+@media (max-width: 400px) {
+  .prev {
+    left: 38%;
+  }
+
+  .next {
+    right: 38%;
+  }
+}

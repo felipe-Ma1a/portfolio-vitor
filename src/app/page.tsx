@@ -3,6 +3,7 @@ import Benefits from "@/components/Benefits";
 import ClientsBenefits from "@/components/ClientsBenefits";
 import ListItem from "@/components/ListItem";
 import Button from "@/components/Button";
+import Carousel from "@/components/Carousel";
 import CardImage from "@/components/CardImage";
 import FAQ from "@/components/FAQ";
 
@@ -11,6 +12,7 @@ import cardImg2 from "public/images/flexvitor-5.jpg";
 import cardImg3 from "public/images/flexvitor-7.jpg";
 import cardImg4 from "public/images/flexvitor-8.jpg";
 import cardImg5 from "public/images/flexvitor-10.jpg";
+import cardImg6 from "public/images/flexvitor-13.jpg";
 
 import styles from "./page.module.css";
 import Card from "@/components/Card";
@@ -96,6 +98,8 @@ export default function Home() {
           <Button />
         </div>
 
+        <Carousel />
+
         <Card className={styles.cardMain}>
           <h2 className={styles.cardSubtitle}>Quem sou eu?</h2>
           <div className={styles.cardGroup}>
@@ -146,6 +150,21 @@ export default function Home() {
             <b>guiar cada passo</b> da sua <b>transformação</b>.
           </p>
           <CardImage src={cardImg5} className={styles.cardImg} />
+        </Card>
+
+        <Card>
+          <p className={styles.cardInfo}>
+            Quantas vezes você já tentou uma dieta da moda e acabou frustrado? O
+            tempo que você perdeu, a energia gasta, e o dinheiro desperdiçado em
+            promessas vazias poderia ter sido investido em algo que{" "}
+            <b>realmente funciona</b>. Com o apoio certo, alguém que pegue na
+            sua mão e te guie, você pode alcançar seus objetivos de forma{" "}
+            <b>eficaz</b> e <b>duradoura</b>. Não deixe mais tempo e dinheiro
+            escaparem. O caminho certo está aqui, com a ajuda de quem{" "}
+            <b>já passou pelo que você está passando</b>, que entende suas
+            necessidades e te leva ao <b>resultado que você tanto busca</b>
+          </p>
+          <CardImage src={cardImg6} className={styles.cardImg} />
         </Card>
 
         <Card className={styles.cardReverse}>

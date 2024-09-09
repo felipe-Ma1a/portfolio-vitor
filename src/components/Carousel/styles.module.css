@@ -1,0 +1,29 @@
+.sliderGroup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-inline: auto;
+  width: 100%;
+  max-width: 1200px;
+  margin-block-end: 5rem;
+}
+
+.sliderGroup h2 {
+  text-align: center;
+  margin-block: 1rem;
+  color: #2374c8;
+}
+
+.sliderImg {
+  max-width: 350px;
+  height: 450px;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 400px) {
+  .sliderImg {
+    margin-left: 0;
+  }
+}
