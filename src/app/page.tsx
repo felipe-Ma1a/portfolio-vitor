@@ -152,7 +152,7 @@ export default function Home() {
           <CardImage src={cardImg5} className={styles.cardImg} />
         </Card>
 
-        <Card>
+        <Card className={styles.cardReverse}>
           <p className={styles.cardInfo}>
             Quantas vezes você já tentou uma dieta da moda e acabou frustrado? O
             tempo que você perdeu, a energia gasta, e o dinheiro desperdiçado em
