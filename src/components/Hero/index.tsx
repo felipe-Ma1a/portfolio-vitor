@@ -1,4 +1,4 @@
-import cardImg from "public/images/flexvitor-12.jpg";
+import cardImg from "public/images/flexvitor-14.jpg";
 import CardImage from "../CardImage";
 import Button from "../Button";
 

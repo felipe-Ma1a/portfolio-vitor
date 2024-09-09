@@ -184,6 +184,10 @@ export default function Home() {
         </div>
 
         <FAQ />
+
+        <div className={styles.buttonGroup}>
+          <Button />
+        </div>
       </main>
 
       <footer className={styles.footer}>
