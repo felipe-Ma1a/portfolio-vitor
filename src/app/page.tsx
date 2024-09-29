@@ -46,8 +46,14 @@ export default function Home() {
             className={styles.listItemWoman}
           />
           <ListItem
-            text="Nutrição para Gravidez e Pós parto"
+            text="Saúde hormonal feminina"
             color="#d0abf1"
+            className={styles.listItemWoman}
+          />
+          <ListItem
+            text="Acompanhamento nutricional voltado para o equilíbrio hormonal, ajudando a minimizar sintomas de desregulação como acne, queda de cabelo, irregularidades menstruais e alterações de humor."
+            color="#d0abf1"
+            showCheck={false}
             className={styles.listItemWoman}
           />
           <ListItem
