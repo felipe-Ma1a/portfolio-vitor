@@ -7,10 +7,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "./CustomArrows";
 
-import sliderImg1 from "public/images/slider-1.jpg";
-import sliderImg2 from "public/images/slider-2.jpg";
-import sliderImg3 from "public/images/slider-3.jpg";
-import sliderImg4 from "public/images/slider-4.jpg";
+import sliderImg1 from "public/images/new-slider-1.jpg";
+import sliderImg2 from "public/images/new-slider-2.jpg";
+import sliderImg3 from "public/images/new-slider-3.jpg";
+import sliderImg4 from "public/images/new-slider-4.jpg";
+import sliderImg5 from "public/images/new-slider-5.jpg";
 
 import styles from "./styles.module.css";
 
@@ -80,6 +81,12 @@ const Carousel = () => {
         />
         <Image
           src={sliderImg4}
+          alt="Imagem do Slider"
+          className={styles.sliderImg}
+          quality={100}
+        />
+        <Image
+          src={sliderImg5}
           alt="Imagem do Slider"
           className={styles.sliderImg}
           quality={100}
