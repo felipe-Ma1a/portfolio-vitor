@@ -19,11 +19,5 @@
   max-width: auto;
   height: auto;
   border-radius: 1rem;
-  margin-left: 1rem;
-}
-
-@media (max-width: 400px) {
-  .sliderImg {
-    margin-left: 0;
-  }
+  margin-left: 0;
 }
