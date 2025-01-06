@@ -12,7 +12,7 @@
 .sliderGroup h2 {
   text-align: center;
   margin-block: 1rem;
-  color: #2374c8;
+  color: var(--primary-clr);
 }
 
 .sliderImg {
