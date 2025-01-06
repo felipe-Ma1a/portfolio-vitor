@@ -16,8 +16,8 @@
 }
 
 .sliderImg {
-  max-width: 350px;
-  height: 500px;
+  max-width: auto;
+  height: auto;
   border-radius: 1rem;
   margin-left: 1rem;
 }
