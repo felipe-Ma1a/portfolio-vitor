@@ -57,12 +57,6 @@ export default function Home() {
             className={styles.listItemWoman}
           />
           <ListItem
-            text="Suporte nutricional para mulheres grávidas e no pós-parto, visando a
-            saúde da mãe e do bebê."
-            showCheck={false}
-            className={styles.listItemWoman}
-          />
-          <ListItem
             text="Melhora nos quadros clínicos de saúde"
             color="#d0abf1"
             className={styles.listItemWoman}
