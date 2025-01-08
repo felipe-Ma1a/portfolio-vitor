@@ -59,7 +59,7 @@ const FAQ = () => {
         />
         <Accordion
           title="Qual é o diferencial para as mulheres?"
-          text="Oferecemos uma abordagem personalizada que inclui cuidados com a saúde hormonal, apoio nutricional para diferentes fases do ciclo menstrual, e suporte durante a gravidez e pós-parto."
+          text="Oferecemos uma abordagem personalizada que inclui cuidados com a saúde hormonal e apoio nutricional para diferentes fases do ciclo menstrual."
           isOpen={openAccordionIndex === 6}
           onClick={() => toggleAccordion(6)}
         />
